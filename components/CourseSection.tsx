@@ -44,16 +44,16 @@ export const CourseSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F5F6FA] py-12 px-6">
-      <div className="max-w-[1408px] mx-auto bg-white rounded-[48px] p-6 sm:p-12 lg:p-[120px]">
-        <div className="mb-[64px] flex flex-col items-center text-center">
-          <span className="text-micro-s block mb-[16px]">ЧОГО МИ НАВЧАЄМО</span>
-          <h2 className="text-[#212631] text-[48px] font-bold leading-tight">
+    <section className="bg-[#F5F6FA] py-8 md:py-12 px-4 md:px-6">
+      <div className="max-w-[1408px] mx-auto bg-white rounded-[32px] md:rounded-[48px] p-6 md:p-12 lg:p-[120px]">
+        <div className="mb-[40px] md:mb-[64px] flex flex-col items-center text-center">
+          <span className="text-micro-s block mb-[12px] md:mb-[16px]">ЧОГО МИ НАВЧАЄМО</span>
+          <h2 className="text-[#212631] text-[28px] md:text-[48px] font-bold leading-tight px-4">
             Популярні професії
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[24px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[16px] md:gap-[24px]">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
